@@ -6,7 +6,7 @@ ul,li{list-style: none;}
 
 
 body {
-    background-image: url(../images/背景.jpg);
+    background-image: url(/背景.7529c040.jpg);
     font-family: Roboto, 'Segoe UI',Arial,'Microsoft Yahei',sans-serif;
     font-size: 81.25%;
   }
@@ -177,3 +177,6 @@ header{
     flex-direction: column;
 }
 
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */

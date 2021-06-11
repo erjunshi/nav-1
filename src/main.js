@@ -1,8 +1,8 @@
 const $siteList = $('.siteList')
 const $lastLi = $siteList.find('li.last')
-const x = localStorage.getItem('x')
-const xObject = JSON.parse(x)
-const hashMap = xObject || [
+const view = localStorage.getItem('view')
+const viewObject = JSON.parse(view)
+const hashMap = viewObject || [
     { logo: 'B', url: 'https://www.bootcdn.cn/' },
     { logo: 'C', url: 'https://cssgradient.io/' },
     { logo: 'D', url: 'https://mozilla.org/zh-CN/' },
@@ -60,7 +60,7 @@ $('.addButton').on('click', () => {
 
 window.onbeforeunload = () => {
     const string = JSON.stringify(hashMap)
-    localStorage.setItem('x', string)
+    localStorage.setItem('view', string)
 }
 
 $(document).on('keypress', (e) => {
